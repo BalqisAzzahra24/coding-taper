@@ -70,7 +70,10 @@ function endGame() {
     gameRunning = false;
     gameOverElement.style.display = 'block';
 
-    
+    // 🔊 Mainkan suara Game Over
+    const sound = document.getElementById('gameOverSound');
+    sound.currentTime = 0;
+    sound.play();
 }
 
 function resetGame() {
